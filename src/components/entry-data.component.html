@@ -1,0 +1,13 @@
+<input
+  type="text"
+  [value]="placeHolder"
+  (input)="placeHolder = $any($event.target).value"
+/>
+<p>{{ placeHolder }}</p>
+
+<input
+  type="text"
+  [value]="placePass"
+  (input)="placePass = $any($event.target).value"
+/>
+<p [style.color]="color">{{ placePass }}</p>
